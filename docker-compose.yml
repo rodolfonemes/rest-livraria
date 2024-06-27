@@ -1,0 +1,11 @@
+services:
+  app:
+    image: 'livraria-api-v1:latest'
+    container_name: api-livraria
+    build:
+      context: .
+    ports:
+      - '8080:8080'
+
+volumes:
+  volumes:
